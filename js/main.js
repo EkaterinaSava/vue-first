@@ -1,6 +1,6 @@
-var myApp = new Vue({
+var demoAppNumber1 = new Vue({
 
-  el: '#app',
+  el: '#demo-app-1',
 
   data: {
     msg: 'Hello, world!'
