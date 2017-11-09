@@ -75,13 +75,24 @@ h6 {
   padding: 5px 10px;
   outline: 0;
 }
+.demo__paragraph {
+  line-height: 20px;
+  margin: 5px 0;
+}
+.demo__text {
+  margin: 10px;
+}
+.demo__text-row {
+  margin: 5px 0;
+}
+.demo__data {
+  color: #5AC0D9;
+  margin-left: 10px;
+}
 .demo__hr {
   width: 80%;
   height: 1px;
   border: 0;
   background-color: #8CCAD9;
   margin: 30px auto;
-}
-.demo--first .demo__paragraph {
-  margin-left: 20px;
 }

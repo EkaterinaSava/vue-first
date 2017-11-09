@@ -10,14 +10,37 @@
   <body>
 
     <main class="primary__container">
+
       <h1 class="primary__heading">Vue.js Эксперименты</h1>
+
 
       <hr class="demo__hr">
 
-      <div id="demo-app-1" class="demo demo--first">
+
+      <div id="demo-app-1" class="demo">
         <h4 class="demo__heading">Demo #1: Отображение текста, вводимого в инпут, в текстовом поле рядом</h3>
         <input type="text" v-on:input="setMessage" class="demo__input" placeholder="Type something...">
-        <p class="demo__paragraph">{{ msg }}</p>
+        <p class="demo__paragraph">
+          <span class="demo__data">{{ msg }}</span>
+        </p>
+      </div>
+
+
+      <hr class="demo__hr">
+
+
+      <div id="demo-app-2" class="demo">
+        <h4 class="demo__heading">Demo #2: Простое хранение данных и методы</h3>
+        <div class="demo__text">User →</div>
+        <div class="demo__text">
+          <p class="demo__text-row">name    →<span class="demo__data">{{ name }}</span></p>
+          <p class="demo__text-row">country →<span class="demo__data">{{ country }}</span></p>
+          <p class="demo__text-row">city    →<span class="demo__data">{{ city }}</span></p>
+        </div>
+
+        <div class="demo__text">
+          Factorial 10 →<span class="demo__data">{{ factorial(10) }}</span>
+        </div>
       </div>
 
       <hr class="demo__hr">
