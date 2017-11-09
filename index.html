@@ -3,14 +3,26 @@
   <head>
     <title>Vue.js</title>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
 
-    <div id="demo-app-1">
-      <input type="text" v-on:input="setMessage">
-      <p>{{ msg }}</p>
-    </div>
+    <main class="primary__container">
+      <h1 class="primary__heading">Vue.js Эксперименты</h1>
+
+      <hr class="demo__hr">
+
+      <div id="demo-app-1" class="demo demo--first">
+        <h4 class="demo__heading">Demo #1: Отображение текста, вводимого в инпут, в текстовом поле рядом</h3>
+        <input type="text" v-on:input="setMessage" class="demo__input" placeholder="Type something...">
+        <p class="demo__paragraph">{{ msg }}</p>
+      </div>
+
+      <hr class="demo__hr">
+
+    </main>
 
     <script src="js/vue.js"></script>
     <script src="js/main.js"></script>

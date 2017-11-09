@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  color: #333;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #f4fdff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #033F4C;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 14px;
+}
+::placeholder {
+  color: #12768E;
+  opacity: .4;
+}
+.primary__container {
+  width: 80%;
+  margin: auto;
+}
+.primary__heading {
+  text-align: center;
+}
+.demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /*** demo containers modificators ***/
+}
+.demo__heading {
+  min-width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.demo__input {
+  width: 200px;
+  height: 30px;
+  font-size: 13px;
+  line-height: 20px;
+  border: 1px solid #12768E;
+  padding: 5px 10px;
+  outline: 0;
+}
+.demo__hr {
+  width: 80%;
+  height: 1px;
+  border: 0;
+  background-color: #8CCAD9;
+  margin: 30px auto;
+}
+.demo--first .demo__paragraph {
+  margin-left: 20px;
+}

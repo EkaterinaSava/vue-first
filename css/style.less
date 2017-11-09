@@ -1,0 +1,95 @@
+// out: style.css, sourcemap: true
+@primaryAqua:    #12768E;
+@darkAqua:       #27555F;
+@superDarkAqua:  #033F4C;
+@lightAqua:      #5AC0D9;
+@superLightAqua: #8CCAD9;
+@veryLightAqua:  #f4fdff;
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #333;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: @veryLightAqua;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: @superDarkAqua;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  line-height: 1.5;
+}
+
+h1 {font-size: 28px;}
+h2 {font-size: 24px;}
+h3 {font-size: 20px;}
+h4 {font-size: 18px;}
+h5 {font-size: 16px;}
+h6 {font-size: 14px;}
+
+::placeholder {
+  color: @primaryAqua;
+  opacity: .4;
+}
+
+.primary {
+  &__container {
+    width: 80%;
+    margin: auto;
+  }
+
+  &__heading {
+    text-align: center;
+  }
+}
+
+.demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__heading {
+    min-width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    width: 200px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 20px;
+    border: 1px solid @primaryAqua;
+    padding: 5px 10px;
+    outline: 0;
+  }
+
+  &__paragraph {
+
+  }
+
+  &__hr {
+    width: 80%;
+    height: 1px;
+    border: 0;
+    background-color: @superLightAqua;
+    margin: 30px auto;
+  }
+
+  /*** demo containers modificators ***/
+  &--first &__paragraph {
+    margin-left: 20px;
+  }
+}
