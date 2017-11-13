@@ -74,6 +74,10 @@ h6 {font-size: 14px;}
     border: 1px solid @primaryAqua;
     padding: 5px 10px;
     outline: 0;
+
+    & + & {
+      margin-left: 10px;
+    }
   }
 
   &__btn {
@@ -115,6 +119,21 @@ h6 {font-size: 14px;}
     border: 0;
     background-color: @superLightAqua;
     margin: 30px auto;
+  }
+
+  &__small-hr {
+    width: 100%;
+    border: 0;
+    position: relative;
+
+    &:after {
+      display: block;
+      content: '';
+      width: 35%;
+      height: 1px;
+      background-color: @superLightAqua;
+      margin: 15px auto;
+    }
   }
 
   /*** demo containers modificators ***/

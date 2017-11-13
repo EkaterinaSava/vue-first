@@ -80,6 +80,24 @@
       <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+      <div id="demo-app-6" class="demo">
+        <h4 class="demo__heading">Demo #6: Двусторонняя привязка</h4>
+        <input type="text" v-model="name" class="demo__input">
+        <input type="text" v-model="name" class="demo__input">
+        <p class="demo__text">&nbsp;Name (из vue-модели):&nbsp;→ <span class="demo__data">{{ name }}</span></p>
+
+        <hr class="demo__small-hr">
+        
+        <p class="demo__text">Введите любое число от 1 до 1000 для вычисления его факториала:</p>
+        <input type="number" min="1" max="1000" v-model="number">
+
+      </div>
+
+      <hr class="demo__hr">
+      <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
     </main>
 
     <script src="js/vue.js"></script>
