@@ -124,6 +124,26 @@
       <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+      <div id="demo-app-7" class="demo">
+        <h4 class="demo__heading">Demo #7: Вычисляемые свойства</h4>
+        <h5 class="demo__subheading">Параметр 'computed' и разрешение/запрет доступа в зависимости от введенного значения</h5>
+
+        <p class="demo__text">Введите ваше имя&nbsp; <input type="text" v-model="name" class="demo__input"><p>
+        <p class="demo__text">Введите ваш возраст&nbsp; <input type="number" v-model="age" class="demo__input" min="0" max="150"></p>
+        
+        <div class="demo__invisible-separator"></div>
+
+        <p class="demo__text">Имя:&nbsp;→ <span class="demo__data">{{ name }}</span></p>
+        <p class="demo__text">Возраст:&nbsp;→ <span class="demo__data">{{ age }}</span></p>
+
+        <p class="demo__text">Уровень доступа:&nbsp;→ <span class="demo__data">{{ checkAccess }}</span></p>
+      </div>
+
+      <hr class="demo__hr">
+      <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
     </main>
 
     <script src="js/vue.js"></script>
