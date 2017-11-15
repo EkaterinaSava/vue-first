@@ -130,8 +130,8 @@ var demoApp6part2 = new Vue({
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* app #7 */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-var demoApp7 = new Vue({
-  el: '#demo-app-7',
+var demoApp7part1 = new Vue({
+  el: '#demo-app-7-1',
 
   data: {
     name: 'Kate',
@@ -141,10 +141,35 @@ var demoApp7 = new Vue({
   computed: {
     checkAccess: function() {
       if ( this.age >= 18 ) {
-        return 'разрешен'
+        return 'разрешен';
       }
       else {
-        return 'запрещен'
+        return 'запрещен';
+      }
+    }
+  }
+})
+
+var demoApp7part2 = new Vue({
+  el: '#demo-app-7-2',
+
+  data: {
+    firstName: 'Екатерина',
+    middleName: 'Олеговна',
+    lastName: 'Сава'
+  },
+
+  computed: {
+    fullName: {
+      get: function() {
+        return this.firstName + ' ' + this.middleName + ' ' + this.lastName;
+      },
+
+      set: function(newFullName) {
+        var names = newFullNameSplit.split[' '];
+        this.firstName = names[0];
+        this.middleName = names[1];
+        this.lastName = names[2];
       }
     }
   }

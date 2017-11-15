@@ -124,19 +124,40 @@
       <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-      <div id="demo-app-7" class="demo">
+      <div class="demo">
         <h4 class="demo__heading">Demo #7: Вычисляемые свойства</h4>
         <h5 class="demo__subheading">Параметр 'computed' и разрешение/запрет доступа в зависимости от введенного значения</h5>
 
-        <p class="demo__text">Введите ваше имя&nbsp; <input type="text" v-model="name" class="demo__input"><p>
-        <p class="demo__text">Введите ваш возраст&nbsp; <input type="number" v-model="age" class="demo__input" min="0" max="150"></p>
-        
-        <div class="demo__invisible-separator"></div>
+        <div id="demo-app-7-1" class="demo">
+          <p class="demo__text">Введите ваше имя&nbsp; <input type="text" v-model="name" class="demo__input"><p>
+          <p class="demo__text">Введите ваш возраст&nbsp; <input type="number" v-model="age" class="demo__input" min="0" max="150"></p>
 
-        <p class="demo__text">Имя:&nbsp;→ <span class="demo__data">{{ name }}</span></p>
-        <p class="demo__text">Возраст:&nbsp;→ <span class="demo__data">{{ age }}</span></p>
+          <div class="demo__invisible-separator"></div>
 
-        <p class="demo__text">Уровень доступа:&nbsp;→ <span class="demo__data">{{ checkAccess }}</span></p>
+          <p class="demo__text">Имя:&nbsp;→ <span class="demo__data">{{ name }}</span></p>
+          <p class="demo__text">Возраст:&nbsp;→ <span class="demo__data">{{ age }}</span></p>
+
+          <p class="demo__text">Уровень доступа:&nbsp;→ <span class="demo__data">{{ checkAccess }}</span></p>
+        </div>
+
+        <hr class="demo__small-hr">
+        <h5 class="demo__subheading">Параметр 'computed' и геттеры / сеттеры</h5>
+
+        <div id="demo-app-7-2" class="demo">
+          <p class="demo__text">Введите ваше имя&nbsp; <input type="text" v-model="firstName" class="demo__input"><p>
+          <div class="demo__invisible-separator"></div>
+          <p class="demo__text">Введите ваше отчество&nbsp; <input type="text" v-model="middleName" class="demo__input"></p>
+          <div class="demo__invisible-separator"></div>
+          <p class="demo__text">Введите вашу фамилию&nbsp; <input type="text" v-model="lastName" class="demo__input"></p>
+
+          <div class="demo__invisible-separator"></div>
+
+          <p class="demo__text">Ваше ФИО:&nbsp;→ <span class="demo__data">{{ fullName }}</span></p>
+          <div class="demo__invisible-separator"></div>
+
+          <p class="demo__text">Вы можете изменить ФИО здесь&nbsp; <input type="text" v-model="fullName" class="demo__input"></p>
+        </div>
+
       </div>
 
       <hr class="demo__hr">
