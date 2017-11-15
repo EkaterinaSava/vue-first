@@ -19,7 +19,9 @@
       <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
       <div id="demo-app-1" class="demo">
-        <h4 class="demo__heading">Demo #1: Отображение текста, вводимого в инпут, в текстовом поле рядом</h4>
+        <h4 class="demo__heading">Demo #1: Что такое Vue.js. Первое приложение</h4>
+        <h5 class="demo__subheading">Отображение текста, вводимого в инпут, в текстовом поле рядом</h5>
+
         <input type="text" v-on:input="setMessage" class="demo__input" placeholder="Type something...">
         <p class="demo__paragraph">&nbsp;→ <span class="demo__data">{{ msg }}</span></p>
       </div>
@@ -30,13 +32,18 @@
       <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
       <div id="demo-app-2" class="demo">
-        <h4 class="demo__heading">Demo #2: Простое хранение данных и методы</h4>
+        <h4 class="demo__heading">Demo #2: Объект Vue</h4>
+        <h5 class="demo__subheading">Хранение простых данных в параметре 'data'</h5>
+
         <div class="demo__text">User →</div>
         <div class="demo__text">
           <p class="demo__text-row">name    →<span class="demo__data">{{ name }}</span></p>
           <p class="demo__text-row">country →<span class="demo__data">{{ country }}</span></p>
           <p class="demo__text-row">city    →<span class="demo__data">{{ city }}</span></p>
         </div>
+
+        <hr class="demo__small-hr">
+        <h5 class="demo__subheading">Параметр 'methods' и вычисление факториала числа</h5>
 
         <div class="demo__text">
           Factorial 10 →<span class="demo__data">{{ factorial(10) }}</span>
@@ -50,6 +57,8 @@
 
       <div id="demo-app-3" class="demo">
         <h4 class="demo__heading">Demo #3: Привязка данных</h4>
+        <h5 class="demo__subheading">Привязка к атрибуту 'href' для ссылки через директиву 'v-bind'</h5>
+
         <a v-bind:href="linkAddress" target="_blank">{{ linkText }}</a>
       </div>
 
@@ -60,6 +69,8 @@
 
       <div class="demo">
         <h4 class="demo__heading">Demo #4: Шаблоны</h4>
+        <h5 class="demo__subheading">Параметр 'template' и создание простого шаблона из одного дива</h5>
+
         <div id="demo-app-4"></div>
       </div>
 
@@ -70,6 +81,8 @@
 
       <div id="demo-app-5" class="demo">
         <h4 class="demo__heading">Demo #5: Обработка событий</h4>
+        <h5 class="demo__subheading">Директива 'v-bind' и простой счетчик с 2-мя обработчиками кликов</h5>
+
         <button v-on:click="increase" class="demo__btn"> + </button>
         <button v-on:click="decrease" class="demo__btn"> - </button>
         <div>&nbsp;→ <span class="demo__data">{{ counter }}</span></div>
@@ -80,16 +93,29 @@
       <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-      <div id="demo-app-6" class="demo">
+      <div class="demo">
         <h4 class="demo__heading">Demo #6: Двусторонняя привязка</h4>
-        <input type="text" v-model="name" class="demo__input">
-        <input type="text" v-model="name" class="demo__input">
-        <p class="demo__text">&nbsp;Name (из vue-модели):&nbsp;→ <span class="demo__data">{{ name }}</span></p>
+        <h5 class="demo__subheading">Директива 'v-model' и привязка через нее 2-ух инпутов к одному значению</h5>
+
+        <div id="demo-app-6-1" class="demo">
+          <input type="text" v-model="name" class="demo__input">
+          <input type="text" v-model="name" class="demo__input">
+          <p class="demo__text">&nbsp;Name (из vue-модели):&nbsp;→ <span class="demo__data">{{ name }}</span></p>
+        </div>
 
         <hr class="demo__small-hr">
-        
-        <p class="demo__text">Введите любое число от 1 до 1000 для вычисления его факториала:</p>
-        <input type="number" min="1" max="1000" v-model="number">
+        <h5 class="demo__subheading">Директива 'v-model' и вычисление факториала при вводе числа в инпут</h5>
+
+        <div id="demo-app-6-2" class="demo">
+          <p class="demo__text">Введите любое число от 1 до 100 для вычисления его факториала:</p>
+          <input type="number" min="1" max="100" v-model="number" class="demo__input">
+          <p class="demo__text">
+            Факториал числа&nbsp;→
+            <span class="demo__data">{{ number }}</span>
+            &nbsp;→&nbsp;равен&nbsp;→&nbsp;
+            <span class="demo__data">{{ factorial(number) }}</span>
+          </p>
+        </div>
 
       </div>
 

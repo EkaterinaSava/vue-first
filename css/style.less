@@ -60,10 +60,17 @@ h6 {font-size: 14px;}
   justify-content: center;
   flex-wrap: wrap;
 
-  &__heading {
+  &__heading,
+  &__subheading {
     min-width: 100%;
     text-align: center;
     margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  &__subheading {
+    color: @primaryAqua;
+    margin-bottom: 20px;
   }
 
   &__input {
@@ -77,6 +84,11 @@ h6 {font-size: 14px;}
 
     & + & {
       margin-left: 10px;
+    }
+
+    &[type="number"] {
+      width: 80px;
+      padding-right: 0;
     }
   }
 
@@ -114,11 +126,11 @@ h6 {font-size: 14px;}
   }
 
   &__hr {
-    width: 80%;
+    width: 75%;
     height: 1px;
     border: 0;
     background-color: @superLightAqua;
-    margin: 30px auto;
+    margin: 40px auto;
   }
 
   &__small-hr {
