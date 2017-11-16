@@ -87,7 +87,7 @@ h6 {font-size: 14px;}
     }
 
     &[type="number"] {
-      width: 80px;
+      width: 60px;
       padding-right: 0;
     }
   }
@@ -151,5 +151,61 @@ h6 {font-size: 14px;}
 
   &__invisible-separator {
     width: 100%;
+  }
+
+  &__square {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-color: #673AB7;
+    border-radius: 0;
+    transition: background-color .25s ease-out,
+                border-radius .25s ease-out;
+    cursor: pointer;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 20px;
+
+      & .demo__btn,
+      & .demo__input {
+        margin-top: 5px;
+      }
+    }
+
+    &--1 {
+      background-color: #2196F3;
+    }
+    &--2 {
+      background-color: #673AB7;
+    }
+    &--3 {
+      background-color: #00BCD4;
+    }
+
+    &.toggled {
+      background-color: #3F51B5;
+    }
+    &.colored {
+      background-color: #E91E63;
+    }
+    &.rounded {
+      border-radius: 50%;
+    }
+    &.red {
+      background-color: #f44336;
+    }
+    &.blue {
+      background-color: #3f51b5;
+    }
+    &.green {
+      background-color: #009688;
+    }
   }
 }

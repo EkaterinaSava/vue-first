@@ -160,6 +160,56 @@
       <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+      <div id="demo-app-8" class="demo">
+        <h4 class="demo__heading">Demo #8: Привзяка классов</h4>
+        <h5 class="demo__subheading">Директива 'v-bind:class' и разные способы добавить классы</h5>
+
+        <div class="demo__square-wrapper">
+          <div class="demo__square demo__square--1" v-bind:class="{toggled: isToggled}" v-on:click="isToggled=!isToggled">Click me!</div>
+        </div>
+
+        <div class="demo__square-wrapper">
+          <div class="demo__square demo__square--2" v-bind:class="{'colored': isColored, 'rounded': isRounded}">Choose ↓↓↓</div>
+          <button class="demo__btn" v-on:click="isColored=!isColored">Toggle color</button>
+          <button class="demo__btn" v-on:click="isRounded=!isRounded">Toggle form</button>
+        </div>
+
+        <div class="demo__square-wrapper">
+          <div class="demo__square demo__square--3" v-bind:class="color">Type 'red' or <br> 'blue' or <br> 'green' ↓↓↓</div>
+          <input type="text" class="demo__input" v-model="color" placeholder="red/blue/green">
+        </div>
+      </div>
+
+      <hr class="demo__hr">
+      <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+      <div id="demo-app-9" class="demo">
+        <h4 class="demo__heading">Demo #9: Привзяка к стилям</h4>
+        <h5 class="demo__subheading">Директива 'v-bind:style' и изменение стилей через атрибут style="..."</h5>
+
+        <div class="demo__square-wrapper">
+          <div class="demo__square demo__square--1" v-bind:class="{toggled: isToggled}" v-on:click="isToggled=!isToggled">Click me!</div>
+        </div>
+
+        <div class="demo__square-wrapper">
+          <div class="demo__square demo__square--2" v-bind:class="{'colored': isColored, 'rounded': isRounded}">Choose ↓↓↓</div>
+          <button class="demo__btn" v-on:click="isColored=!isColored">Toggle color</button>
+          <button class="demo__btn" v-on:click="isRounded=!isRounded">Toggle form</button>
+        </div>
+
+        <div class="demo__square-wrapper">
+          <div class="demo__square demo__square--3" v-bind:class="color">Type 'red' or <br> 'blue' or <br> 'green' ↓↓↓</div>
+          <input type="text" class="demo__input" v-model="color" placeholder="red/blue/green">
+        </div>
+      </div>
+
+      <hr class="demo__hr">
+      <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
     </main>
 
     <script src="js/vue.js"></script>

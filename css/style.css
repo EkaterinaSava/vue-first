@@ -84,7 +84,7 @@ h6 {
   margin-left: 10px;
 }
 .demo__input[type="number"] {
-  width: 80px;
+  width: 60px;
   padding-right: 0;
 }
 .demo__btn {
@@ -137,4 +137,54 @@ h6 {
 }
 .demo__invisible-separator {
   width: 100%;
+}
+.demo__square {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background-color: #673AB7;
+  border-radius: 0;
+  transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
+  cursor: pointer;
+}
+.demo__square-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+.demo__square-wrapper .demo__btn,
+.demo__square-wrapper .demo__input {
+  margin-top: 5px;
+}
+.demo__square--1 {
+  background-color: #2196F3;
+}
+.demo__square--2 {
+  background-color: #673AB7;
+}
+.demo__square--3 {
+  background-color: #00BCD4;
+}
+.demo__square.toggled {
+  background-color: #3F51B5;
+}
+.demo__square.colored {
+  background-color: #E91E63;
+}
+.demo__square.rounded {
+  border-radius: 50%;
+}
+.demo__square.red {
+  background-color: #f44336;
+}
+.demo__square.blue {
+  background-color: #3f51b5;
+}
+.demo__square.green {
+  background-color: #009688;
 }
