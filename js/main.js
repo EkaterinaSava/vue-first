@@ -165,6 +165,8 @@ var demoApp7part2 = new Vue({
         return this.firstName + ' ' + this.middleName + ' ' + this.lastName;
       },
 
+      // не очень я поняла, зачем это нужно и что с этим делать
+      // не доросла еще, видимо. ладно, может потом пойму
       set: function(newFullName) {
         var names = newFullNameSplit.split[' '];
         this.firstName = names[0];
