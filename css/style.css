@@ -101,6 +101,9 @@ h6 {
 .demo__btn + .demo__btn {
   margin-left: -1px;
 }
+.demo__input + .demo__btn {
+  margin-left: 10px;
+}
 .demo__paragraph {
   line-height: 20px;
   margin: 5px 0;

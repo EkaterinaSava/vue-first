@@ -252,9 +252,39 @@ var demoApp10 = new Vue({
 })
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* app #10 */
+/* app #11 */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+var demoApp11part1 = new Vue({
+  el: '#demo-app-11-1',
 
+  data: {
+    name: 'Kate',
+    city: 'Moscow'
+  },
+
+  methods: {
+    setName: function(value) {
+      this.name = value;
+    }
+  }
+})
+
+demoApp11part1.name = 'Ann';
+demoApp11part1.setName('Jasmine');
+
+var demoApp11part2 = new Vue({
+  el: '#demo-app-11-2',
+
+  data: {
+    title: ''
+  },
+
+  methods: {
+    onClick: function() {
+      demoApp11part1.setName(this.title);
+    }
+  }
+})
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* app #10 */

@@ -218,6 +218,26 @@
       <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+      <div class="demo">
+        <h4 class="demo__heading">Demo #11: Работа с объектом Vue</h4>
+        <h5 class="demo__subheading">Измнение данных из одного Vue-объекта в другом</h5>
+
+        <div id="demo-app-11-1" class="demo">
+          <input type="text" v-model="name" class="demo__input">
+          <p class="demo__text">&nbsp;→<span class="demo__data">{{ name }}</span>&nbsp;→</p>
+        </div>
+
+        <div id="demo-app-11-2" class="demo">
+          <input type="text" v-model="title" class="demo__input" placeholder="New name">
+          <button class="demo__btn" v-on:click="onClick">Change</button>
+        </div>
+      </div>
+
+      <hr class="demo__hr">
+      <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
     </main>
 
     <script src="js/vue.js"></script>
