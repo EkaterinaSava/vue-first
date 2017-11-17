@@ -193,9 +193,28 @@ var demoApp8 = new Vue({
 })
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* app #7 */
+/* app #9 */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+var demoApp9 = new Vue({
+  el: '#demo-app-9',
 
+  data: {
+    width: '',
+    height: '',
+    color: ''
+  },
+
+  computed: {
+    styleObject: function() {
+      return {
+        width: this.width + 'px',
+        height: this.height + 'px',
+        'background-color': this.color
+      }
+    }
+  }
+
+})
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* app #7 */
