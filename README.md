@@ -1,4 +1,4 @@
-# vue-first
+# Vue.js first try via Tutorial
 
 Первое знакомство с синтаксисом Vue.js 
 
