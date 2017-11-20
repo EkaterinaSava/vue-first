@@ -300,15 +300,54 @@ var demoApp12 = new Vue({
 })
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* app #10 */
+/* app #13 */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+var demoApp13 = new Vue({
+  el: '#demo-app-13',
 
+  data: {
+    message: "Hello, Vue!"
+  },
+
+  methods: {
+    destroy: function() {
+      this.$destroy();
+    }
+  },
+
+  beforeCreate: function() {
+    console.log('beforeCreate()');
+  },
+
+  created: function() {
+    console.log('created()');
+  },
+
+  beforeUpdate: function() {
+    console.log('beforeUpdate()');
+  },
+
+  updated: function() {
+    console.log('updated()');
+  },
+
+  beforeMount: function() {
+    console.log('beforeMount()');
+  },
+
+  mounted: function() {
+    console.log('mounted()');
+  },
+
+  beforeDestroy: function() {
+    console.log('beforeDestroy()');
+  },
+
+  destroyed: function() {
+    console.log('destroyed()');
+  }
+})
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* app #10 */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* app #10 */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */

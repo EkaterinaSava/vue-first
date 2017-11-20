@@ -242,11 +242,25 @@
         <h4 class="demo__heading">Demo #12: refs и управление html-элементами</h4>
         <h5 class="demo__subheading">Параметр '$refs', атрибут 'ref' и ссылка на html-элемент из шаблона</h5>
 
-        <p class="demo__text" ><span class="demo__data" ref="text">Hello, world!</span></p>
+        <p class="demo__text"><span class="demo__data" ref="text">Hello, world!</span></p>
         <button class="demo__btn" v-on:click="changeText">← Change text</button>
       </div>
 
       <hr class="demo__hr">
+      <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+      <div id="demo-app-13" class="demo">
+        <h4 class="demo__heading">Demo #13: Жизненный цикл Vue</h4>
+        <h5 class="demo__subheading">8 методов цикла (см. console.log)</h5>
+
+        <p class="demo__text"><span class="demo__data">{{ message }}</span></p>
+        <div class="demo__invisible-separator"></div>
+        <button class="demo__btn" v-on:click="message='Updated'">Update ↑↑↑</button>
+        <button class="demo__btn" v-on:click="destroy">Destroy ↑↑↑</button>
+      </div>
+
       <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
